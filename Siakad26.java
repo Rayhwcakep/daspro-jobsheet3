@@ -6,7 +6,7 @@ public class Siakad26 {
  String nama, nim;
  char kelas;
  byte absen;
- double nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
+ double nilaiKuis, nilaiTugas, nilaiUTS, nilaiUAS, nilaiAkhir;
  System.out.print("Masukan  Nama: ");
  nama = sc.nextLine();
  System.out.print("Masukkan NIM: ");
@@ -20,14 +20,16 @@ public class Siakad26 {
  nilaiKuis = sc.nextDouble();
  System.out.print("Masukkan nilai tugas: ");
  nilaiTugas = sc.nextDouble();
- System.out.print("Masukkan nilai ujian: ");
- nilaiUjian = sc.nextDouble();
+ System.out.print("Masukkan nilai UTS: ");
+ nilaiUTS = sc.nextDouble();
+ System.out.print("Masukkan nilai UAS: ");
+ nilaiUAS = sc.nextDouble();
 
- nilaiAkhir = ( nilaiKuis + nilaiTugas + nilaiUjian) / 3;
+ nilaiAkhir = ( nilaiKuis*0.2 + nilaiTugas*0.15 + nilaiUTS*0.3 + nilaiUAS*0.35);
 
- System.out.print("Nama: " + nama + "NIM: " + nim);
- System.out.print("kelas: " + nama + "Absen" + absen );
- System.out.print("Nilai Akhir:" + nilaiAkhir);
+ System.out.println("Nama: " + nama + "NIM: " + nim);
+ System.out.println("kelas: " + nama + "Absen" + absen );
+ System.out.println("Nilai Akhir:" + nilaiAkhir);
     
     }
 
